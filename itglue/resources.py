@@ -11,7 +11,10 @@ __all__ = [
     "Location",
     "FlexibleAsset",
     "FlexibleAssetField",
-    "FlexibleAssetType"
+    "FlexibleAssetType",
+    "Model",
+    "Manufacturer",
+    "OperatingSystem",
 ]
 
 
@@ -336,3 +339,22 @@ class FlexibleAssetField(ResourceBase):
     @classmethod
     def resource_type(cls):
         return 'flexible_asset_fields'
+
+
+class Model(ResourceBase):
+    @classmethod
+    def resource_type(cls):
+        return "models"
+
+
+class Manufacturer(ResourceBase):
+    @classmethod
+    def resource_type(cls):
+        return "manufacturers"
+
+
+class OperatingSystem(ResourceBase):
+    @classmethod
+    def resource_type(cls):
+        return "operating_systems"
+
